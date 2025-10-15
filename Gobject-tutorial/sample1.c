@@ -8,5 +8,5 @@
 #include "sample1.h"
 
 void say_hello() {
-    printf("Hello...!\n");
+    printf("Hello from sample1!\n");
 }
