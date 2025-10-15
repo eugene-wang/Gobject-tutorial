@@ -7,6 +7,6 @@
 
 #include "sample1.h"
 
-void say_hello() {
+void say_hello(void) {
     printf("Hello from sample1!\n");
 }
