@@ -47,6 +47,7 @@
 				misc/example1.c,
 				misc/example2.c,
 				misc/example3.c,
+				misc/example4.c,
 				sample1.c,
 				test1.c,
 			);
