@@ -10,7 +10,7 @@
 
 int main(int argc, const char * argv[]) {
     // insert code here...
-    printf("Hi, There!\n");
+    printf("Hello, There!\n");
     printf("Hi, There, again!\n");
     printf("Hi, There, third!\n");
     say_hello();

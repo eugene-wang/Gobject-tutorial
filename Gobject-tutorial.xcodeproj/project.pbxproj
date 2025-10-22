@@ -6,7 +6,23 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		C1E928852EA66FAF004F5C86 /* GStreamer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1E928842EA66FAF004F5C86 /* GStreamer.framework */; };
+		C1E928862EA66FAF004F5C86 /* GStreamer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C1E928842EA66FAF004F5C86 /* GStreamer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
 /* Begin PBXCopyFilesBuildPhase section */
+		C1E928872EA66FAF004F5C86 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C1E928862EA66FAF004F5C86 /* GStreamer.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C1F5BF652E8E36FB00810721 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -19,12 +35,31 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C1E928842EA66FAF004F5C86 /* GStreamer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GStreamer.framework; path = ../../../../../Library/Frameworks/GStreamer.framework; sourceTree = "<group>"; };
 		C1F5BF672E8E36FB00810721 /* Gobject-tutorial */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Gobject-tutorial"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		C1E928882EA67069004F5C86 /* Exceptions for "Gobject-tutorial" folder in "Gobject-tutorial" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				main.c,
+				misc/example1.c,
+				misc/example2.c,
+				misc/example3.c,
+				sample1.c,
+				test1.c,
+			);
+			target = C1F5BF662E8E36FB00810721 /* Gobject-tutorial */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		C1F5BF692E8E36FB00810721 /* Gobject-tutorial */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				C1E928882EA67069004F5C86 /* Exceptions for "Gobject-tutorial" folder in "Gobject-tutorial" target */,
+			);
 			path = "Gobject-tutorial";
 			sourceTree = "<group>";
 		};
@@ -35,16 +70,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1E928852EA66FAF004F5C86 /* GStreamer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C1E928832EA66FAE004F5C86 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C1E928842EA66FAF004F5C86 /* GStreamer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C1F5BF5E2E8E36FB00810721 = {
 			isa = PBXGroup;
 			children = (
 				C1F5BF692E8E36FB00810721 /* Gobject-tutorial */,
+				C1E928832EA66FAE004F5C86 /* Frameworks */,
 				C1F5BF682E8E36FB00810721 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -67,6 +112,7 @@
 				C1F5BF632E8E36FB00810721 /* Sources */,
 				C1F5BF642E8E36FB00810721 /* Frameworks */,
 				C1F5BF652E8E36FB00810721 /* CopyFiles */,
+				C1E928872EA66FAF004F5C86 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -246,9 +292,15 @@
 		C1F5BF6F2E8E36FB00810721 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Gobject-tutorial/Gobject-tutorial.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V68Z7A6PU5;
 				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = /Library/Frameworks/GStreamer.framework/Versions/1.0/Headers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -256,9 +308,15 @@
 		C1F5BF702E8E36FB00810721 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Gobject-tutorial/Gobject-tutorial.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V68Z7A6PU5;
 				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = /Library/Frameworks/GStreamer.framework/Versions/1.0/Headers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
