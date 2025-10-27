@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		C1E928852EA66FAF004F5C86 /* GStreamer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1E928842EA66FAF004F5C86 /* GStreamer.framework */; };
-		C1E928862EA66FAF004F5C86 /* GStreamer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C1E928842EA66FAF004F5C86 /* GStreamer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C1E928862EA66FAF004F5C86 /* GStreamer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C1E928842EA66FAF004F5C86 /* GStreamer.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		C1E928872EA66FAF004F5C86 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
@@ -50,6 +50,8 @@
 				misc/example4.c,
 				misc/example5.c,
 				sample1.c,
+				tdouble1/main.c,
+				tdouble1/tdouble.c,
 				test1.c,
 			);
 			target = C1F5BF662E8E36FB00810721 /* Gobject-tutorial */;
@@ -304,6 +306,7 @@
 					"$(LOCAL_LIBRARY_DIR)/Frameworks",
 				);
 				HEADER_SEARCH_PATHS = /Library/Frameworks/GStreamer.framework/Versions/1.0/Headers;
+				LIBRARY_SEARCH_PATHS = /Library/Frameworks/GStreamer.framework/Libraries;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -321,6 +324,7 @@
 					"$(LOCAL_LIBRARY_DIR)/Frameworks",
 				);
 				HEADER_SEARCH_PATHS = /Library/Frameworks/GStreamer.framework/Versions/1.0/Headers;
+				LIBRARY_SEARCH_PATHS = /Library/Frameworks/GStreamer.framework/Libraries;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
