@@ -7,11 +7,55 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C14FDE9C2EC0B25000EB9F3D /* GStreamer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1E928842EA66FAF004F5C86 /* GStreamer.framework */; };
+		C14FDE9F2EC0B25000EB9F3D /* GStreamer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C1E928842EA66FAF004F5C86 /* GStreamer.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C14FDEAE2EC0C39D00EB9F3D /* GStreamer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1E928842EA66FAF004F5C86 /* GStreamer.framework */; };
+		C14FDEB12EC0C39D00EB9F3D /* GStreamer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C1E928842EA66FAF004F5C86 /* GStreamer.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		C1E928852EA66FAF004F5C86 /* GStreamer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1E928842EA66FAF004F5C86 /* GStreamer.framework */; };
 		C1E928862EA66FAF004F5C86 /* GStreamer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C1E928842EA66FAF004F5C86 /* GStreamer.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		C14FDE9D2EC0B25000EB9F3D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		C14FDE9E2EC0B25000EB9F3D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C14FDE9F2EC0B25000EB9F3D /* GStreamer.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C14FDEAF2EC0C39D00EB9F3D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		C14FDEB02EC0C39D00EB9F3D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C14FDEB12EC0C39D00EB9F3D /* GStreamer.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C1E928872EA66FAF004F5C86 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 12;
@@ -35,11 +79,62 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C14FDEA32EC0B25000EB9F3D /* test1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = test1; sourceTree = BUILT_PRODUCTS_DIR; };
+		C14FDEB52EC0C39D00EB9F3D /* test2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = test2; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1E928842EA66FAF004F5C86 /* GStreamer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GStreamer.framework; path = ../../../../../Library/Frameworks/GStreamer.framework; sourceTree = "<group>"; };
 		C1F5BF672E8E36FB00810721 /* Gobject-tutorial */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Gobject-tutorial"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		C14FDEA42EC0B25000EB9F3D /* Exceptions for "Gobject-tutorial" folder in "test1" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				main.c,
+				misc/example1.c,
+				misc/example2.c,
+				misc/example3.c,
+				misc/example4.c,
+				misc/example5.c,
+				sample1.c,
+				tdouble.c,
+				tdouble1/main.c,
+				tdouble1/tdouble.c,
+				tdouble3/main.c,
+				tdouble3/tdouble.c,
+				tdouble6/main.c,
+				tdouble6/tdouble.c,
+				test1.c,
+				tnumber/main.c,
+				tstr/main.c,
+				tstr/test2.c,
+				tstr/tnumstr.c,
+			);
+			target = C14FDE992EC0B25000EB9F3D /* test1 */;
+		};
+		C14FDEB62EC0C39D00EB9F3D /* Exceptions for "Gobject-tutorial" folder in "test2" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				main.c,
+				misc/example1.c,
+				misc/example2.c,
+				misc/example3.c,
+				misc/example4.c,
+				misc/example5.c,
+				sample1.c,
+				tdouble.c,
+				tdouble1/main.c,
+				tdouble1/tdouble.c,
+				tdouble3/main.c,
+				tdouble3/tdouble.c,
+				tdouble6/main.c,
+				tdouble6/tdouble.c,
+				test1.c,
+				tnumber/main.c,
+				tstr/main.c,
+				tstr/test1.c,
+			);
+			target = C14FDEAB2EC0C39D00EB9F3D /* test2 */;
+		};
 		C1E928882EA67069004F5C86 /* Exceptions for "Gobject-tutorial" folder in "Gobject-tutorial" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
@@ -50,9 +145,17 @@
 				misc/example4.c,
 				misc/example5.c,
 				sample1.c,
+				tdouble.c,
 				tdouble1/main.c,
 				tdouble1/tdouble.c,
+				tdouble3/main.c,
+				tdouble3/tdouble.c,
+				tdouble6/main.c,
+				tdouble6/tdouble.c,
 				test1.c,
+				tnumber/main.c,
+				tstr/test1.c,
+				tstr/test2.c,
 			);
 			target = C1F5BF662E8E36FB00810721 /* Gobject-tutorial */;
 		};
@@ -63,6 +166,8 @@
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
 				C1E928882EA67069004F5C86 /* Exceptions for "Gobject-tutorial" folder in "Gobject-tutorial" target */,
+				C14FDEA42EC0B25000EB9F3D /* Exceptions for "Gobject-tutorial" folder in "test1" target */,
+				C14FDEB62EC0C39D00EB9F3D /* Exceptions for "Gobject-tutorial" folder in "test2" target */,
 			);
 			path = "Gobject-tutorial";
 			sourceTree = "<group>";
@@ -70,6 +175,22 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		C14FDE9B2EC0B25000EB9F3D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C14FDE9C2EC0B25000EB9F3D /* GStreamer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C14FDEAD2EC0C39D00EB9F3D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C14FDEAE2EC0C39D00EB9F3D /* GStreamer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C1F5BF642E8E36FB00810721 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -102,6 +223,8 @@
 			isa = PBXGroup;
 			children = (
 				C1F5BF672E8E36FB00810721 /* Gobject-tutorial */,
+				C14FDEA32EC0B25000EB9F3D /* test1 */,
+				C14FDEB52EC0C39D00EB9F3D /* test2 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -109,6 +232,52 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		C14FDE992EC0B25000EB9F3D /* test1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C14FDEA02EC0B25000EB9F3D /* Build configuration list for PBXNativeTarget "test1" */;
+			buildPhases = (
+				C14FDE9A2EC0B25000EB9F3D /* Sources */,
+				C14FDE9B2EC0B25000EB9F3D /* Frameworks */,
+				C14FDE9D2EC0B25000EB9F3D /* CopyFiles */,
+				C14FDE9E2EC0B25000EB9F3D /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				C1F5BF692E8E36FB00810721 /* Gobject-tutorial */,
+			);
+			name = test1;
+			packageProductDependencies = (
+			);
+			productName = "Gobject-tutorial";
+			productReference = C14FDEA32EC0B25000EB9F3D /* test1 */;
+			productType = "com.apple.product-type.tool";
+		};
+		C14FDEAB2EC0C39D00EB9F3D /* test2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C14FDEB22EC0C39D00EB9F3D /* Build configuration list for PBXNativeTarget "test2" */;
+			buildPhases = (
+				C14FDEAC2EC0C39D00EB9F3D /* Sources */,
+				C14FDEAD2EC0C39D00EB9F3D /* Frameworks */,
+				C14FDEAF2EC0C39D00EB9F3D /* CopyFiles */,
+				C14FDEB02EC0C39D00EB9F3D /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				C1F5BF692E8E36FB00810721 /* Gobject-tutorial */,
+			);
+			name = test2;
+			packageProductDependencies = (
+			);
+			productName = "Gobject-tutorial";
+			productReference = C14FDEB52EC0C39D00EB9F3D /* test2 */;
+			productType = "com.apple.product-type.tool";
+		};
 		C1F5BF662E8E36FB00810721 /* Gobject-tutorial */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C1F5BF6E2E8E36FB00810721 /* Build configuration list for PBXNativeTarget "Gobject-tutorial" */;
@@ -161,11 +330,27 @@
 			projectRoot = "";
 			targets = (
 				C1F5BF662E8E36FB00810721 /* Gobject-tutorial */,
+				C14FDE992EC0B25000EB9F3D /* test1 */,
+				C14FDEAB2EC0C39D00EB9F3D /* test2 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		C14FDE9A2EC0B25000EB9F3D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C14FDEAC2EC0C39D00EB9F3D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C1F5BF632E8E36FB00810721 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -176,6 +361,78 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		C14FDEA12EC0B25000EB9F3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				CODE_SIGN_ENTITLEMENTS = "Gobject-tutorial/Gobject-tutorial.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V68Z7A6PU5;
+				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = /Library/Frameworks/GStreamer.framework/Versions/1.0/Headers;
+				LIBRARY_SEARCH_PATHS = /Library/Frameworks/GStreamer.framework/Libraries;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C14FDEA22EC0B25000EB9F3D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				CODE_SIGN_ENTITLEMENTS = "Gobject-tutorial/Gobject-tutorial.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V68Z7A6PU5;
+				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = /Library/Frameworks/GStreamer.framework/Versions/1.0/Headers;
+				LIBRARY_SEARCH_PATHS = /Library/Frameworks/GStreamer.framework/Libraries;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C14FDEB32EC0C39D00EB9F3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				CODE_SIGN_ENTITLEMENTS = "Gobject-tutorial/Gobject-tutorial.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V68Z7A6PU5;
+				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = /Library/Frameworks/GStreamer.framework/Versions/1.0/Headers;
+				LIBRARY_SEARCH_PATHS = /Library/Frameworks/GStreamer.framework/Libraries;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C14FDEB42EC0C39D00EB9F3D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				CODE_SIGN_ENTITLEMENTS = "Gobject-tutorial/Gobject-tutorial.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V68Z7A6PU5;
+				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = /Library/Frameworks/GStreamer.framework/Versions/1.0/Headers;
+				LIBRARY_SEARCH_PATHS = /Library/Frameworks/GStreamer.framework/Libraries;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		C1F5BF6C2E8E36FB00810721 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -332,6 +589,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		C14FDEA02EC0B25000EB9F3D /* Build configuration list for PBXNativeTarget "test1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C14FDEA12EC0B25000EB9F3D /* Debug */,
+				C14FDEA22EC0B25000EB9F3D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C14FDEB22EC0C39D00EB9F3D /* Build configuration list for PBXNativeTarget "test2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C14FDEB32EC0C39D00EB9F3D /* Debug */,
+				C14FDEB42EC0C39D00EB9F3D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C1F5BF622E8E36FB00810721 /* Build configuration list for PBXProject "Gobject-tutorial" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
